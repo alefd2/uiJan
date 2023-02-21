@@ -7,14 +7,14 @@ export const Square = (props: NodeProps) => {
                 position={Position.Right}
                 id="right"
                 type={'source'}
-                className="-right-5 w-3 h-3 bg-transparent bg-blue-400/70"
+                className="-right-5 w-3 h-3 bg-transparent bg-blue-400/50"
             />
 
             <Handle
                 position={Position.Left}
                 id="left"
                 type={'source'}
-                className="-left-5 w-3 h-3 bg-transparent bg-blue-400/70"
+                className="-left-5 w-3 h-3 bg-transparent bg-blue-400/50"
 
             />
 
@@ -22,14 +22,14 @@ export const Square = (props: NodeProps) => {
                 position={Position.Top}
                 id="top"
                 type={'source'}
-                className="-top-5 w-3 h-3 bg-transparent bg-blue-400/80"
+                className="-top-5 w-3 h-3 bg-transparent bg-blue-400/50"
             />
 
             <Handle
                 position={Position.Bottom}
                 id="bottom"
                 type={'source'}
-                className="-bottom-5 w-3 h-3 bg-transparent bg-blue-400/80"
+                className="-bottom-5 w-3 h-3 bg-transparent bg-blue-400/50"
 
             />
         </div>

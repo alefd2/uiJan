@@ -52,7 +52,7 @@ function App() {
         id: crypto.randomUUID(),
         type: 'square',
         position: {
-          x: 854,
+          x: 200,
           y: 350,
         },
         data: {}
@@ -82,10 +82,10 @@ function App() {
         />
         <Controls />
       </ReactFlow>
-      {/* 
+
       <Toolbar.Root className='fixed bottom-20 left-1/2 -translate-x-1/2 bg-white rounded-2xl shadow-lg border border-zinc-300 px-8 h-20 w-96 overflow-hidden ' >
-        <Toolbar.Button onClick={addSquareNode} className='w-32 h-32 bg-slate-500 mt-6 rounded transition-transform hover:-translate-y-2' />
-      </Toolbar.Root> */}
+        <Toolbar.Button onClick={addSquareNode} className='w-32 h-32 bg-violet-500 mt-6 rounded transition-transform hover:-translate-y-2' />
+      </Toolbar.Root>
 
 
     </div>

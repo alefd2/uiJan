@@ -23,12 +23,12 @@ Para fazer o deploy desse projeto rode
   yarn dev
 ```
 
+![Gravação de tela de 20-02-2023 23_39_07](https://user-images.githubusercontent.com/46423825/220234022-797cbbde-c272-40da-8cd5-bbd788fdb4dc.gif)
+
 
 ## Demonstração
 
 O lib é bem simples e funcional, parabéns à equipe!
-
-
 
 ```js
       <ReactFlow>

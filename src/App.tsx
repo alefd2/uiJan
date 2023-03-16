@@ -1,10 +1,15 @@
-import { useCallback } from 'react';
-import ReactFlow, { addEdge, Background, Connection, ConnectionMode, Controls, Node, useEdgesState, useNodesState } from 'reactflow';
+import { useCallback, useState } from 'react';
+import ReactFlow, { addEdge, Background, Connection, ConnectionMode, Controls, MiniMap, Node, useEdgesState, useNodesState } from 'reactflow';
 import 'reactflow/dist/style.css';
 
 import * as Toolbar from '@radix-ui/react-toolbar';
 import DefaultEdge from './components/edges/DefaultEdge';
 import { Square } from './components/nodes/Square';
+
+const minimapStyle = {
+  height: 220,
+  width: 220,
+};
 
 const NODE_TYPES = {
   square: Square,
@@ -55,7 +60,7 @@ function App() {
           x: 200,
           y: 350,
         },
-        data: {}
+        data: { label: '1' }
       },
     ])
   }
@@ -81,11 +86,13 @@ function App() {
           color="#ddd"
         />
         <Controls />
+        <MiniMap style={minimapStyle} zoomable pannable />
       </ReactFlow>
 
-      <Toolbar.Root className='fixed bottom-20 left-1/2 -translate-x-1/2 bg-white rounded-2xl shadow-lg border border-zinc-300 px-8 h-20 w-96 overflow-hidden ' >
+      <Toolbar.Root className='fixed bottom-20 left-1/2 -translate-x-1/2 bg-white rounded-2xl shadow-lg border border-zinc-300 px-8 h-20 w-80 overflow-hidden flex justify-between' >
         <Toolbar.Button onClick={addSquareNode} className='w-32 h-32 bg-violet-500 mt-6 rounded transition-transform hover:-translate-y-2' />
       </Toolbar.Root>
+
 
 
     </div>
